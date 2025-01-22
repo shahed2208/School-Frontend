@@ -1,0 +1,14 @@
+.custom-button {
+  display: inline-block; /* السماح للزر بالتوسع مع النص */
+  padding: 0.625rem 1.25rem; /* تحويل الحواف إلى rem */
+  gap: 10px; /* المسافة بين العناصر داخل الزر */
+  border-radius: 0.5rem ; /* تحويل نصف قطر الحدود إلى rem */
+  border: 0.125rem solid rgba(0, 0, 0, 1); /* تحويل الحدود إلى rem */
+  background: rgba(255, 255, 255, 1); /* لون الخلفية */
+  color: black; /* لون النص */
+  font-size: 1rem; /* حجم النص */
+  text-align: center; /* محاذاة النص في المنتصف */
+  opacity: 1; /* تعيين التعتيم إلى 1 ليكون الزر مرئيًا */
+  width: auto; /* السماح للزر بالتوسع بناءً على محتواه */
+  height: auto; /* السماح للزر بالتوسع بناءً على محتواه */
+}

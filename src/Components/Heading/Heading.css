@@ -1,0 +1,17 @@
+.line::after{
+    content: '';
+    width: 5%;
+    height: 5px;
+    background-color: var(--primary-color);
+    display: block;
+    margin: auto;
+    
+}
+
+.graph{
+    width: 70%;
+    background-color: var(--primary-color);
+    display: block;
+    margin: auto;
+
+}

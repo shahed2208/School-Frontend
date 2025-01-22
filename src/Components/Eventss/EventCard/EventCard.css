@@ -1,0 +1,72 @@
+.event-card {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .event-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/img/Shape.svg') no-repeat;
+    background-size: contain;
+    z-index: -1; /* يجعل الشكل خلف المحتوى */
+  }
+  
+  .event-card:nth-child(1)::before {
+    background-position: top left;
+  }
+  
+  .event-card:nth-child(2)::before {
+    background-position: top right;
+  }
+  
+  .event-card:nth-child(3)::before {
+    background-position: center left;
+  }
+  
+  .event-card:nth-child(4)::before {
+    background-position: center right;
+  }
+  
+  .event-card:nth-child(5)::before {
+    background-position: bottom left;
+  }
+  
+  .event-card:nth-child(6)::before {
+    background-position: bottom right;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    z-index: 1; /* لضمان أن الصورة فوق الشكل */
+  }
+  
+  .card-body {
+    position: relative;
+    z-index: 2; /* لضمان النص فوق الصورة والشكل */
+  }
+  
+  .card-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .card-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+  }
+  

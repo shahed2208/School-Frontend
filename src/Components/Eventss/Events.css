@@ -1,0 +1,29 @@
+.activity-section {
+  text-align: center;
+  padding: 3rem;
+  background-color: #fff6f4;
+  font-family: Arial, sans-serif;
+}
+
+.activity-heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.activity-subheading {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.activity-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+

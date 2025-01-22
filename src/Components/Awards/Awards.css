@@ -1,0 +1,75 @@
+.awards-section {
+  text-align: center;
+  padding: 3rem;
+  background-color: #fff6f4;
+  font-family: Arial, sans-serif;
+}
+
+.awards-heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.awards-subheading {
+  font-size: 1rem;
+  color: #666;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.awards-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  overflow: visible;
+  margin-top: 2rem;
+}
+
+.awards-footer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.awards-more {
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+}
+
+.awards-navigation {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.awards-button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+ 
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.awards-button:hover {
+  background-color: #ffffff;
+}
+@media (max-width: 480px) {
+  .awards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* لجعل الكروت تتمركز أفقياً */
+    gap: 1.5rem; /* لإضافة مسافة بين الكروت */
+    overflow: hidden;
+  }
+
+  .awards-container > div {
+    width: 100%; /* اجعل الكارد يأخذ العرض الكامل للحاوية */
+    max-width: 300px; /* يمكن ضبط الحد الأقصى للعرض */
+  }
+}
