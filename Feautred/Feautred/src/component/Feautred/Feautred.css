@@ -1,0 +1,506 @@
+.special-features-section {
+    background-color: #f8f0e3; /* لون الخلفية (بيج فاتح) */
+    padding: 80px 20px; /* مساحة داخلية */
+    text-align: center; /* توسيط النص */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .special-features-content {
+   
+    margin: 0 auto; /* توسيط المحتوى */
+  }
+  
+  .features-button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px; /* حواف دائرية للزر */
+    cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+  }
+  
+  .features-button:hover{
+      background-color: #eee;
+  }
+  
+  .special-features-content h2 {
+    font-size: 3rem; /* حجم العنوان */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .special-features-content p {
+    font-size: 1.2rem; /* حجم الفقرة */
+    line-height: 1.7; /* تباعد الأسطر */
+    color: #555; /* لون نص الفقرة */
+  }
+  
+  /* تصميم متجاوب للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .special-features-content h2 {
+      font-size: 2.5rem;
+    }
+  
+    .special-features-content p {
+      font-size: 1rem;
+    }
+      .special-features-section{
+          padding: 60px 10px;
+      }
+  }
+  .features-cards-section {
+    background-color: #f8f0e3; /* لون الخلفية */
+    padding: 60px 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .features-cards-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* تخطيط شبكي متجاوب */
+    grid-gap: 30px;
+  }
+  
+  .feature-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-sizing: border-box;
+      transition: transform 0.3s ease; /* إضافة انتقال سلس لتأثير التكبير */
+      position: relative; /* مهم جداً لجعل البطاقة مرجعاً للعنصر المطلق */
+        overflow: hidden; /* لمنع تجاوز الأيقونة لحدود البطاقة */
+  }
+  .feature-card:hover{
+      transform: scale(1.05); /* تكبير البطاقة عند التمرير */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+  }
+  
+  .card-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    position: relative; /* مهم جداً لجعل البطاقة مرجعاً للعنصر المطلق */
+    background-color: #fff;
+   
+ 
+    text-align: left;
+
+      transition: transform 0.3s ease;
+      overflow: hidden; /* لمنع تجاوز الأيقونة لحدود البطاقة */
+  }
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border: 2px solid #000; /* إضافة حد أسود بسمك 2 بكسل */
+    border-radius: 5px; /* لجعل الحد دائريًا (اختياري) */
+      padding: 5px; /* إضافة مساحة داخلية بين الصورة والحد */
+      box-sizing: border-box; /* احتساب المساحة الداخلية والحد ضمن أبعاد العنصر */
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  .card-icon {
+    width: 40px; /* تحديد عرض ثابت للأيقونة */
+    height: 40px; /* تحديد ارتفاع ثابت للأيقونة */
+    margin-bottom: 15px;
+      object-fit: contain; /* هام: للحفاظ على نسبة العرض إلى الارتفاع للصورة */
+  }
+  
+  .what-students-learn-section {
+    background-color: #f8f0e3; /* لون الخلفية (بيج فاتح) */
+    padding: 80px 20px; /* مساحة داخلية */
+    text-align: center; /* توسيط النص */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .what-students-learn-content {
+    max-width: 900px; /* تحديد عرض أقصى للمحتوى */
+    margin: 0 auto; /* توسيط المحتوى */
+  }
+  
+  .features-button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px; /* حواف دائرية للزر */
+    cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+  }
+  .features-button:hover{
+      background-color: #eee;
+  }
+  
+  .what-students-learn-content h2 {
+    font-size: 3rem; /* حجم العنوان */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .what-students-learn-content p {
+    font-size: 1.2rem; /* حجم الفقرة */
+    line-height: 1.7; /* تباعد الأسطر */
+    color: #555; /* لون نص الفقرة */
+  }
+  
+  /* تصميم متجاوب للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .what-students-learn-content h2 {
+      font-size: 2.5rem;
+    }
+  
+    .what-students-learn-content p {
+      font-size: 1rem;
+    }
+      .what-students-learn-section{
+          padding: 60px 10px;
+      }
+  }
+  .what-students-learn-details-section {
+    background-color: #f8f0e3; /* لون الخلفية */
+    padding: 60px 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .what-students-learn-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* تخطيط شبكي متجاوب */
+    grid-gap: 30px;
+  }
+  
+  .learning-area {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-sizing: border-box;
+      min-height: 150px; /* تحديد حد أدنى للارتفاع */
+      display: flex; /* لترتيب المحتوى عمودياً */
+      flex-direction: column; /* لترتيب المحتوى عمودياً */
+      justify-content: center; /* لتوسيط المحتوى عمودياً */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* إضافة انتقال سلس لتأثيرات التمرير */
+  }
+  .learning-area:hover{
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .learning-area h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .learning-area p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* تصميم متجاوب للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .what-students-learn-details-container {
+      grid-template-columns: 1fr; /* عرض عمود واحد على الشاشات الصغيرة */
+    }
+  }
+  .learning-area-icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+.rooms-gallery-section {
+    background-color: #f8f0e3; /* لون الخلفية */
+    padding: 80px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .rooms-gallery-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .gallery-button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+  }
+  .gallery-button:hover{
+      background-color: #eee;
+  }
+  
+  .rooms-gallery-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .rooms-gallery-content p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .filter-button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-button.active {
+    background-color: #000;
+    color: #fff;
+  }
+  .filter-button:hover{
+      background-color: #eee;
+  }
+  
+  /* تصميم متجاوب للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .rooms-gallery-content h2 {
+      font-size: 2.5rem;
+    }
+  
+    .rooms-gallery-content p {
+      font-size: 1rem;
+    }
+      .rooms-gallery-section{
+          padding: 60px 10px;
+      }
+  }
+  .classrooms-section {
+    background-color: #f8f0e3;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    
+  }
+  
+  .classrooms-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center; /* توسيط العناصر عمودياً */
+    gap: 20px; /* مسافة بين الأزرار والعنوان */
+    margin-bottom: 20px; /* مسافة بين أزرار التنقل والفقرة */
+  }
+  
+  .nav-button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+  }
+  .nav-button:hover{
+      background-color: #eee;
+  }
+  
+  
+.classrooms-images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    position: absolute; /* وضع الصور بشكل مطلق */
+    top: -60px; /* تحريك الصور للأعلى. عدل هذه القيمة حسب الحاجة */
+    left: 20px;
+    right: 20px;
+}
+.classrooms-image-wrapper{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.classrooms-image-wrapper:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.classrooms-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+ 
+.classrooms-card {
+    background-color: white;
+    padding: 130px;
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف للكرت */
+    border-style: solid;
+    position: relative; /* مهم لوضع الصور بشكل مطلق */
+}
+
+  /* تصميم متجاوب للشاشات الصغيرة */
+  @media (max-width: 768px) {
+      .classrooms-content{
+          text-align: center;
+      }
+    .classrooms-content h3 {
+      font-size: 1.7rem;
+    }
+  
+    .classrooms-content p {
+      font-size: 1rem;
+    }
+      .classrooms-section{
+          padding: 40px 10px;
+      }
+  }
+  .library-section {
+    background-color: #f8f0e3;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .library-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  
+
+.library-card {
+    background-color: white;
+    padding: 130px;
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف للكرت */
+    border-style: solid;
+    position: relative; /* مهم لوضع الصور بشكل مطلق */
+}
+
+.library-images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    position: absolute; /* وضع الصور بشكل مطلق */
+    top: -60px; /* تحريك الصور للأعلى. عدل هذه القيمة حسب الحاجة */
+    left: 20px;
+    right: 20px;
+}
+.library-image-wrapper{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.library-image-wrapper:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.library-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+ 
+
+
+
+.ScienceLab-section {
+    background-color: #f8f0e3;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .ScienceLab-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  
+
+.ScienceLab-card {
+    background-color: white;
+    padding: 130px;
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف للكرت */
+    border-style: solid;
+    position: relative; /* مهم لوضع الصور بشكل مطلق */
+}
+
+.ScienceLab-images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    position: absolute; /* وضع الصور بشكل مطلق */
+    top: -60px; /* تحريك الصور للأعلى. عدل هذه القيمة حسب الحاجة */
+    left: 20px;
+    right: 20px;
+}
+.ScienceLab-image-wrapper{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ScienceLab-image-wrapper:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.ScienceLab-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+ 
