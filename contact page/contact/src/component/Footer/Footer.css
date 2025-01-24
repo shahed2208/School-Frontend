@@ -1,0 +1,134 @@
+
+.footer {
+    background-color: #fff;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd; /* إضافة خط فاصل علوي */
+    border: 1px solid #000;
+    
+    border-radius: 10px;
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center; /* توسيط العناصر عمودياً */
+    padding: 10px 20px; /* مساحة داخلية (أعلى/أسفل، يمين/يسار) */
+  
+    flex-wrap: wrap; /* السماح للعناصر بالالتفاف في الشاشات الصغيرة */
+ 
+    width: 100%;
+}
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* توزيع المسافة بين العناصر */
+}
+
+.footer-left {
+    width: 30%;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-left img {
+    max-width: 150px; /* تحديد عرض أقصى للشعار */
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.footer-middle {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #555;
+}
+.footer-bottom{
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-bottom-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 10px;
+}
+.footer-bottom-left{
+    display: flex;
+    gap: 10px;
+}
+.footer-bottom-right{
+    display: flex;
+    gap: 10px;
+}
+.social-icon{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* تصميم متجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-left{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .footer-middle{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-bottom-content{
+        flex-direction: column;
+        align-items: center;
+    }
+}

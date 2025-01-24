@@ -1,0 +1,189 @@
+
+.top-banner {
+    
+    text-align: center; 
+    font-size: 1.2rem; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 0;
+    border-style: solid;
+    border-radius: 10px;
+  }
+  
+  /* تصميم متجاوب عالشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .top-banner {
+      font-size: 1rem; /* تصغير حجم الخط عالشاشات الصغيرة */
+      padding: 10px;
+    }
+  }
+  
+  /* تصميم متجاوب للشاشات الكبيرة  */
+  @media (min-width: 1200px) {
+      .top-banner {
+          font-size: 1.4rem;
+      }
+  }
+  .main-nav {
+    background-color: #f8ad9d; 
+    display: flex;
+    align-items: center; 
+    padding: 10px 20px; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    box-sizing: border-box; 
+    width: 100%;
+    border-style: solid;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    border-style:none solid none none;
+  }
+  
+  .logo {
+    max-height: 50px; 
+    margin-right: 20px;
+  }
+  
+  .nav-links {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+ 
+  .nav-links li {
+    margin: 0 10px; 
+    border-right:solid black;
+    padding-right: 10px;
+  }
+  
+
+  .nav-links li:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none; 
+    color: #333; 
+    padding: 8px 15px; 
+    
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
+  }
+  
+  .nav-links a:hover {
+    background-color: #fff; 
+   
+  }
+  
+  /* تصميم متجاوب للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .main-nav {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .logo-container {
+      margin-bottom: 10px; 
+      width: 100%; 
+      justify-content: center; 
+    }
+  
+    .nav-links {
+      flex-direction: column; 
+      width: 100%; 
+      align-items: stretch; 
+    }
+  
+    .nav-links li {
+      margin: 5px 0; 
+      width: 100%; 
+    }
+      .nav-links a{
+          text-align: center;
+      }
+  }
+  .contact-section {
+    background-color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    max-width: 1200px; 
+    margin: 0 auto;
+  }
+  
+  .contact-left {
+    width: 45%; 
+  }
+  
+  .contact-button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .contact-left h2 {
+      font-size: 2rem;
+  }
+  
+  .contact-right {
+    width: 45%; 
+  }
+  
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+  }
+  
+  .info-box {
+    display: flex;
+    align-items: center;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+  }
+  
+  .icon {
+    margin-right: 10px;
+      font-size: 1.2rem;
+  }
+  
+  /* تصميم متجاوب للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .contact-left,
+    .contact-right {
+      width: 90%; 
+      text-align: center; 
+      margin-bottom: 20px;
+    }
+      .contact-info{
+          grid-template-columns: 1fr;
+      }
+  }
